@@ -1,0 +1,38 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Proyecto Slider</title>
+	<link rel="stylesheet" href="css/nivo-slider.css">
+	<!--<link rel="stylesheet" href="css/mi-slider.css"> -->
+	<link rel="stylesheet" href="themes/default/default.css">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.nivo.slider.js"></script>
+
+	<script type="text/javascript">
+		$(window).on('load', function() {
+			$('#slider').nivoSlider(); /* a id slider se le aplica la funcion de pasar las imagenes */ 
+		});
+		
+	</script>
+</head>
+<body>
+	<div class="slider-wrapper theme-default"> <!-- este es un contenedor -->
+		<div id="slider" class="nivoSlider"> 
+       <img src="img/11.jpg" alt="" title="#htmlcaption1" />
+       <img src="img/12.jpg" alt="" title="#htmlcaption2"/>
+       <img src="img/13.jpg" alt="" title="#htmlcaption3" />
+     </div >
+		<div id="htmlcaption1" class="nivo-html-caption">
+			<h1>Sean Bienvenidos</h1>
+		</div>
+		<div id="htmlcaption2" class="nivo-html-caption">
+			<h1>Acerca de nosotros</h1>
+		</div>
+		<div id="htmlcaption3" class="nivo-html-caption">
+			<h1><strong>Gracias por visitar</strong></h1>
+		</div>
+	</div>
+</body>
+</html>
